@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savio Rodrigues</title>
+    <link rel="stylesheet" href="style.css">  <!-- Cache Buster -->
+    <!-- AOS Library -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="intro-screen" id="intro">{5H09V^US_}</div>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo">
+                <span>𝚂𝚊𝚟𝚒𝚘 𝚁𝚘𝚍𝚛𝚒𝚐𝚞𝚎𝚜</span>
+            </div>
+
+            <!-- Navigation Links -->
+            <nav class="nav-links">
+                <a href="#about">About me</a>
+                <a href="#Tprojects">Roles</a>
+                <a href="#Projects">Projects</a>
+                <a href="#Skills">Skills</a>
+                <a href="#contact-me">Contact me</a>
+            </nav>
+
+
+        </div>
+    </header>
+
+
+<!-------------About me---------------->
+<section id="about" class="Aboutme-section" data-aos="fade-up">
+    <div class="Aboutme-container">        
+        <!-- My Image -->
+        <div class="product-image">
+            <img src="/images/Profilepicture.jpg" alt="Savio Rodrigues" width="320" height="400">
+        </div>
+        <div class ="box">                
+        </div>
+        <section class="Features-about">
+            <h1>Hi, I'm <span class="Skyblue">Savio Rodrigues</span></h1>       
+            <h2>A <span id="element"></span></h2>
+            <div class="about-button">
+                <button class="bttn1" onclick="downloadCV()">CV</button>
+                <button class="bttn1" onclick="window.open('https://github.com/savo-R', '_blank')">Github</button>
+            </div>
+            <script>
+                function downloadCV(){
+                    const link =document.createElement("a");
+                    link.href = "Savio_Rodrigues_Software_Developer_CV.pdf"; //CV File path
+                    link.download ="Savio_Rodrigues_CV.pdf";
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                }
+            </script>
+        </section>
+        
+    </div> <!-- Closing div for Aboutme-container -->
+</section>
+
+    <!-- Main Content (Moved Outside Header) -->
+    <main>
+
+<!------------Team projects---------------------------->
+
+<section id="Tprojects" class="features-section" data-aos="fade-right">
+    <h1>Team collaborations & Roles</h1>
+    <div class="secondSection">
+            <div class ="box">                
+            </div>
+                <div class="EXp1">
+                    <div class="icon">🎓</div><h2>Academimate</h2>
+                    <h3>Full-Stack web application Student Housing & Roommate Matching Platform</h3>
+                    <h4>📍Kingston University (Final Year Project, 2024)- BSc Computer Science</h4>
+                    <p>Developed a web-based solution for university students which could help them find affordable acommodation and compatible housemates
+                       during their time at university.Built using PHP (MVC), MySQL, HTML, CSS, and JavaScript for a fully responsive, 
+                      database-driven experience.Developed a roommate matching system based on academic, lifestyle, and personal preferences.Led requirements
+                       gathering, prototyping, and iterative user testing using Agile (Scrum & Kanban).Prioritized security, accessibility, and robust cross-platform compatibility.</p>
+                </div> 
+
+                <div class="EXp1">
+                    <div class="icon">🎓</div><h2>RealEstateManager</h2>
+                    <h3>Property Management Mobile App</h3>
+                    <h4>📍Kingston University (2024)- BSc Computer Science</h4>
+                    <p>A cross-platform mobile app for landlords to easily manage properties and tenants on the go.
+                      Developed in React Native and Expo for iOS & Android.Enabled property listings, photo uploads, 
+                      and in-app communication between landlords and tenants.
+                      Used Git & GitHub for collaboration and Agile sprint delivery.</p>
+                </div> 
+                
+
+                <div class="EXp1">
+                    <div class="icon">🍲</div><h2>Box Recipe</h2>
+                    <h3>Full-Stack E-commerce Web Application[Team Project]</h3>
+                    <h4>📍Kingston University- BSc Computer Science</h4>
+                    <p>As part of my Databases module, I had to develop a web application for an e-commerce platform specializing in the sale of recipe 
+                        boxes. The platform allows customers to browse, select and manage their recipe box subscriptions seamlessly. 
+                        I collaborated with a teammate to build a user-friendly interface and implement robust back-end functionality, 
+                        Showcasing my skills in both front-end and back-end development. 
+                        The project involved integrating a responsive design to provide a smooth and intuitive user experience.</p>
+                </div>
+
+                <div class="EXp1">
+                    <div class="icon">📚</div><h2>Grade Calculator</h2>
+                    <h3>PowerApps[Team Project]</h3>
+                    <h4>📍Kingston University- BSc Computer Science</h4>
+                    <h5>Role: Tester</h5>
+                    <p>As a Tester, I centered around a testing a grade calculator to ensure its functionality, reliability and accuracy. 
+                        I performed comprehensive testing across multiple phases of development, 
+                        to validate the grade input systems,weighted grade calculations and grade prediction features.
+                         My efforts included developing detailed test cases, identifying and documenting bugs and collaborating closely with the development 
+                         team to troubleshoot and resolve issues.</p>
+                </div>
+
+
+
+
+</section>
+
+
+
+
+
+<!-----------Projects section-------------->
+
+    <section id="Projects"class="features-section">
+        <h1>Personal Projects</h1>
+        <div class="features-container">
+            <div class="feature-card">
+                <div class="icon">🤖</div>
+                <h3>Python Chatbot</h3>
+                <p>Inspired by Jarvis the following chatbot uses libraries like pyttsx3, wikipedia, and webbrowser to perform tasks such as telling jokes, opening websites/programs, and providing information. The assistant greets the user, takes voice commands, and responds with text and speech.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="icon">✂️</div>
+                <h3><a href="https://github.com/savo-R/HarvardGenerator" target="_blank">Harvard Generator</a></h3>
+                <p>The following Python script generates Harvard-style citations. It prompts the user for information like author, year, title, and URL, then formats and prints the citation string, including the correct month name.  It includes basic input validation for the month.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="icon">🎲</div>
+                <h3><a href="https://github.com/savo-R/TwoPlayerDiceGame" target="_blank">Two player dice game</a></h3>
+                <p>This is a simple Python game where two players roll dice for five rounds. The player with the highest total score wins! If there's a tie, both players roll one extra die to determine the winner. 
+                    The game is automated and interactive, making it fun and easy to play.</p>
+            </div>
+
+        </div>
+    </section>
+
+<!-----------Project Section Ends------------------>
+
+
+    
+<section id="Skills" class="skills-section" data-aos="fade-up">
+        <h1>My Skills</h1>
+        <div class="skills-timeline">
+          
+          <div class="skill-item">
+            <div class="dot"></div>
+            <div class="content">
+              <img src="images/htmlcss.png" alt="HTML & CSS" class="skill-icon">
+              <h3>HTML & CSS</h3>
+              <p>Built beautiful and responsive layouts for personal and university projects.</p>
+            </div>
+          </div>
+      
+          <div class="skill-item">
+            <div class="dot"></div>
+            <div class="content">
+              <img src="images/python.png" alt="Python" class="skill-icon">
+              <h3>Python</h3>
+              <p>Developed chatbots, games, and citation generators using core Python libraries.</p>
+            </div>
+          </div>
+      
+          <div class="skill-item">
+            <div class="dot"></div>
+            <div class="content">
+              <img src="images/php.png" alt="PHP" class="skill-icon">
+              <h3>PHP</h3>
+              <p>Used for server-side scripting and form handling in dynamic websites.</p>
+            </div>
+          </div>
+      
+          <div class="skill-item">
+            <div class="dot"></div>
+            <div class="content">
+              <img src="images/java.png" alt="Java" class="skill-icon">
+              <h3>Java</h3>
+              <p>Built OOP-based programs and worked with Java in university coursework.</p>
+            </div>
+          </div>
+      
+          <div class="skill-item">
+            <div class="dot"></div>
+            <div class="content">
+              <img src="images/mysql.png" alt="MySQL" class="skill-icon">
+              <h3>MySQL</h3>
+              <p>Designed and queried relational databases in full-stack web apps.</p>
+            </div>
+          </div>
+      
+          <div class="skill-item">
+            <div class="dot"></div>
+            <div class="content">
+              <img src="images/Reactnative.png" alt="VSCode" class="skill-icon">
+              <h3>React Native</h3>
+              <p>Designed and built cross-platform mobile App in React Native</p>
+            </div>
+          </div>
+      
+        </div>
+</section>
+      
+
+
+<!-------------------------------------------->
+
+<section id="contact-me" class="contact-me">
+    <!-- Left Section: Google Map -->
+    <div class="contact-map">
+        <iframe 
+            title="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317716.6064073193!2d-0.43123970044346843!3d51.52860701956136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon!5e0!3m2!1sen!2suk!4v1739726695771!5m2!1sen!2suk"
+            frameborder="0" 
+            style="filter: grayscale(1) contrast(1.2) opacity(0.16);" 
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <!-- Right Section: Contact Form -->
+    <div class="contact-form">
+        <h2>Contact me</h2>
+
+        <form action="/DeveloperWebsite/sendemail.php" method="post">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Let'connect..." required></textarea>
+        
+            <button type="submit">Send</button>
+        </form>
+
+        <p class="footer-text">Powered using HTML, CSS, JavaScript and PHP </p>
+    </div>
+</section>
+
+
+
+
+<!-------------- Footer Section -------------------------------------------------------------->
+    <footer class="footer">
+        <div class="footer-container">
+          <div clas="footer-right social-icons">
+              <a href="https://github.com/savo-R" target="_blank" aria-label="GitHub">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+
+              <a href="https://www.linkedin.com/in/savio-r-96a6ab140/" target="_blank" aria-label="linkedin">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+
+              <a href="https://replit.com/@SavoRodrigues" target="_blank" aria-label="Replit">
+                <ion-icon name="code-slash-outline"></ion-icon>
+              </a>  
+
+
+          </div>
+            <!-- Left Section: Logo & Brand Name -->
+
+               <div class="footer-right">© 2025 Savio Rodrigues | All rights reserved</div>
+
+
+            <!-- Right Section: Social Icons -->
+
+        </div>
+    </footer>
+
+
+</main>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+
+// Cool hacker animation bit of java
+  const chars = '!<>-_\\/[]{}—=+*^?#________';
+  const finalText = 'SAVIO.RODRIGUES()';
+  const el = document.getElementById('intro');
+
+  // Disable scrolling during intro
+  document.body.style.overflow = 'hidden';
+
+  let frame = 0;
+  let queue = [];
+
+  for (let i = 0; i < finalText.length; i++) {
+    const from = chars[Math.floor(Math.random() * chars.length)];
+    const to = finalText[i];
+    const start = Math.floor(Math.random() * 40);
+    const end = start + Math.floor(Math.random() * 40);
+    queue.push({ from, to, start, end });
+  }
+
+  function update() {
+    let output = '';
+    let complete = 0;
+    for (let i = 0, n = queue.length; i < n; i++) {
+      let { from, to, start, end, char } = queue[i];
+      if (frame >= end) {
+        complete++;
+        output += to;
+      } else if (frame >= start) {
+        if (!char || Math.random() < 0.28) {
+          char = chars[Math.floor(Math.random() * chars.length)];
+          queue[i].char = char;
+        }
+        output += `<span class="dud">${char}</span>`;
+      } else {
+        output += from;
+      }
+    }
+    el.innerHTML = output;
+    if (complete === queue.length) {
+      setTimeout(() => {
+        el.classList.add('hide-intro');
+        setTimeout(() => {
+          el.style.display = 'none';
+          document.body.style.overflow = ''; // re-enable scroll
+          window.location.hash = '#about'; // jump to #about section
+        }, 1000);
+      }, 700);
+    } else {
+      requestAnimationFrame(update);
+      frame++;
+    }
+  }
+
+  update();
+
+
+    AOS.init({
+        duration: 1000,
+        once: true,
+    });
+
+    var typed = new Typed('#element',{
+        strings: ['Web developer.','Problem solver','Software engineer.'],
+        typeSpeed: 70,
+    });
+</script>
+
+<!----The following scripts below are used from ionicons---->
+<!---for the social media links to my website--->
+<!--Link to the tutorial-->
+<!--https://www.youtube.com/watch?v=Hskt1jN7JTc-->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
+
